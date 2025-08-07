@@ -6,7 +6,11 @@
 		<meta name="description" content="Projeto Portfólio">
 		<meta name="author" content="Generation Brasil">
 		<meta name="keywords" content="HTML, CSS, JavaScript">
-		<title>Meu Perfil</title>
+		
+        <!-- Link para a Folha de Estilo da Página - CSS -->
+        <link rel="stylesheet" href="./assets/css/style.css">
+        
+        <title>Meu Perfil</title>
 	</head>
 	<body>
 		<!-- Cabeçalho da Página (header) -->
@@ -41,13 +45,13 @@
 		<main>
 			
 			<!-- Seção Formulário de Contato e Redes Sociais -->
-			<section id="contact">
+			<section id="contact" class="flex">
 				
 				<!-- Seção do Formulário-->
-				<form action="#" method="submit">
+				<form action="#" method="submit" id="formulario">
 					<label for="nome">Nome: </label>
 					<input
-						id="nome"
+						id="name"
 						type="text"
 						name="name"
 						placeholder="Digite seu nome"
@@ -86,9 +90,10 @@
 
 					<button type="submit">Enviar</button>
 				</form>
+				
 
 				<!-- Seção do Google Maps -->
-				<article id="mapa">
+				<article id="mapa" class="flex_start">
 
 					<div id="endereco">
 						<p>Av. Paulista, 100</p>
@@ -132,3 +137,4 @@
 		</footer>
 	</body>
 </html>
+

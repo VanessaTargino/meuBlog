@@ -7,6 +7,10 @@
         <meta name="author" content="Generation Brasil">
         <meta name="keywords" content="HTML, CSS, JavaScript">
         <link rel="icon" type="image/svg" href="./assets/img/favicon.svg" />
+        
+        <!-- Link para a Folha de Estilo da Página - CSS -->
+        <link rel="stylesheet" href="./assets/css/style.css">
+
         <title>Meu Perfil</title>
     </head>
     <body>
@@ -14,7 +18,7 @@
         <header>
 
             <!-- Div Conteudo do Cabeçalho -->
-            <div id="header_content">
+            <div id="header_content" class="flex">
 
                 <!-- Titulo do Cabeçalho -->
                 <div id="titulo">
@@ -49,19 +53,21 @@
         <main>
 
             <!-- Seção sobre você -->
-            <section id="about">
+            <section id="about" class="flex_start">
 
                 <!-- Título da Seção -->
                 <h2>Sobre Mim</h2>
 
                 <!--Conteúdo da Seção -->
-                <div id="conteudo">
+                <div id="conteudo" class="flex">
                     <strong>Bem-vindo ao meu portfólio inicial! Aqui você encontrará informações sobre mim, minhas habilidades e um vídeo que eu gosto muito.</strong>
 
                 <!-- Imagem de Perfil -->
-                <p></p><img src="./assets/img/user_02.svg" 
+                <img src="./assets/img/user_02.svg" 
                 alt="Foto de Vanessa Targino
-                " width="200" height="200"/>
+                
+                class="foto_perfil"
+                />
 
                 <!-- Parágrafo com informações pessoais -->
                 <article id="sobre_mim">
@@ -81,12 +87,13 @@
                 </div>
     
             <!-- Seção contendo um vídeo de sua preferência -->
-             <section id="video">
+             <section id="video" class="flex_start">
                 <!-- Título da Seção -->
                 <h2>Meu Vídeo Favorito</h2>
 
                 <!-- Vídeo incorporado -->
-                 <div id="youtube_video">
+                 <div id="youtube_video" class="flex">
+                <p>
                     <strong> 🎬 À Procura da Felicidade </strong>
 <p>
                     Este é um dos meus filmes favoritos, que fala sobre perseverança e a busca pela felicidade. 
@@ -109,7 +116,8 @@
         </main>
 
         <!-- Rodapé da Página (footer) -->
-        <footer>
+        <footer class="flex">
+
 <!-- Seção de Contato - Redes Sociais -->
  <section id="redes_sociais">
                 
